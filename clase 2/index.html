@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+<div class="flex-v">
+    <p class="paragragh1"> <strong>Puedes llevar hasta 10 stickers en total </strong></p>
+    <div class="flex-h">
+    <div class="flex-v">
+        <img class="sandia" src="./css/st1.png" class="flex-item" alt="">
+        <input name="" id="p-1" class="flex-item" >
+    </div>      
+    <div class="flex-v">
+        <img class="perro" src="./css/st2.png" class="flex-item" alt="">
+        <input name="" id="p-2" class="flex-item" >
+    </div>      
+    <div class="flex-v">
+        <img class="panda"src="./css/st3.png" class="flex-item" alt="">
+        <input name="" id="p-3" class="flex-item" >
+    </div>      
+
+    </div>    
+    <p id="result">  </p>
+    <button class="selector" onclick="
+    n1 = Number(document.querySelector('#p-1').value)
+    n2 = Number(document.querySelector('#p-2').value)
+    n3 = Number(document.querySelector('#p-3').value)
+    suma = n1 + n2 + n3 
+    console.log(suma);
+    element = document.querySelector('#result')
+    if (suma <= 10){
+        element.innerHTML = 'Llevas ' + suma + ' elementos'
+    }
+    else {
+        element.innerHTML = 'Llevas demasiados stickers'
+    }
+    "> Verificar 
+    </button> 
+
+</div>
+<div class="caja2">
+    <h3>Ingresa el Password</h3>
+<div class="llave">
+        <select name="">
+        <option value="0">0</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        </select>
+        <select name="">
+        <option value="0">0</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        </select>
+        <select id="" name="">
+        <option value="0">0</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        </select>
+</div>
+<button class="mt-2">Ingresar</button>
+<p class="mensaje"></p>
+</div>
+
+        <script src="index.js"></script>
+</body>
+</html>
